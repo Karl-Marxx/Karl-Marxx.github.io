@@ -1,49 +1,54 @@
-<head> 
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=3.0">
-<title>Panties</title>
-  <h1>Sexx</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Dynamic Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<input type="text" id="username" name="username">
-    <div style="color:rgb(100,200,200) ; font-size: 20px;">
-    This text is red and 20px in size.
-    </div>
-  <label for="a"> <br>
-  <input type="button" name="a"> <br>
-    <label for="b"> <br>
-<input type="checkbox" name="b"> <br>
-      <label for="c" <br>
-<input type="color" name="c"> <br>
-        <label for="d"> <br>
-<input type="date" name="d"> <br>
-<input type="datetime-local" name="e"> <br>
-<input type="email" name="f"> <br>
-<input type="file" name="g"> <br>
-<input type="hidden" name="h">
-<input type="image" name="i">
-<input type="month" name="j">
-<input type="number" name="k">
-<input type="password" name="l">
-<input type="radio" name="m">
-<input type="range" name="n">
-<input type="reset" name="o">
-<input type="search" name="p">
-<input type="submit" name="r">
-<input type="tel" name="s">
-<input type="text" name="t">
-<input type="time"name="u">
-<input type="url" name="f">
-<input type="week" name="h">
+    <header>
+        <h1>Welcome to the Complex Dynamic Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#admin">Admin Panel</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <hr>false<hr>
-    h4 {
-    font-size:100px; font-family: Verdana, Arial, Helvetica, sans-serif; 
-    color: blue;
-    }
-    <h4>This is a paragraph inside a div.</h4>
-<section id="portfolio">
-      <br>  <h2>Portfolio</h2> 
-  </section>
-  <article>Houston Mandeville</article>
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <canvas id="chart"></canvas>
+        <div id="userStats"></div>
+    </section>
+    
+    <section id="shop">
+        <h2>Shop</h2>
+        <div id="products"></div>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+    
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    
+    <section id="admin">
+        <h2>Admin Panel</h2>
+        <div id="adminControls">
+            <button onclick="manageUsers()">Manage Users</button>
+            <button onclick="viewOrders()">View Orders</button>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
 </body>
+</html>
